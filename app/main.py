@@ -2,14 +2,14 @@ from datetime import datetime  # DO NOT CHANGE THIS IMPORT
 from time import sleep
 
 
-def main():
+def main() -> None:
     while True:
-        d = datetime.now()
-        s = d.strftime("%Y-%m-%d %H:%M:%S")
-        name = f"app-{d.hour}_{d.minute}_{d.second}.log"
+        doom = datetime.now()
+        scorpion = doom.strftime("%Y-%m-%d %H:%M:%S")
+        name = f"app-{doom.hour}_{doom.minute}_{doom.second}.log"
         with open(name, "w") as x:
-            x.write(f"{s}")
-            print(f"{s} {name}")
+            x.write(f"{scorpion}")
+            print(f"{scorpion} {name}")
         sleep(1)
 
 
